@@ -1,0 +1,9 @@
+# do not touch this line
+configVersion: 2
+
+name: Humidity_App
+description: .
+keywords: .
+displayName: Second App
+sensors:
+	- humidity
