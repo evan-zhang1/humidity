@@ -1,9 +1,43 @@
 # do not touch this line
 configVersion: 2
 
-name: Humidity_App
-description: .
-keywords: .
-displayName: Second App
+description: test
+keywords: 'test'
+name: HumidityColorPicker
+shortName: HumidityColorPicker
+displayName: Humidity Color Picker
 sensors:
-	- humidity
+  - humidity
+screens:
+  - - switch
+  - - line
+dataTypes:
+  monitor:
+    humidity: int
+widgets:
+  switch:
+    control: switch
+    label: switch test
+    map:
+      - event: redblue
+        value: Red and Blue
+      - event: redgreen
+        value: Red and Green
+      - event: greenred
+        value: Green and Red
+      - event: greenblue
+        value: Green and Blue
+      - event: bluegreen
+        value: Blue and Green
+      - event: bluered
+        value: Blue and Red
+      - event: clear
+        value: Clear LED
+  line:
+    display: line
+    type: monitor
+    format: fixed
+    keys: humidity
+    realtime: false
+    label: Humidity
+    refresh: 60
